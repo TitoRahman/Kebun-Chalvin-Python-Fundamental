@@ -1,3 +1,12 @@
-word = input("Enter a text : ")
+n = int(input("Please insert n : "))
 
-print(f"{word[-1]}{word[1:len(word)-1]}{word[0]}")
+for i in range(1,n+1):
+    if  (i/3).is_integer():
+        print(i//3, end="")
+    else :
+        x = i//3
+        if x > 0:
+            print(f"[{x}] {i%3}/3", end="")
+        else :
+            print(f"{i%3}/3", end="")
+    print(" " if i==n else ", ", end="")
