@@ -82,15 +82,15 @@ def remove_student(students, student_name):
 FILENAME = "grade_x.txt"
 
 # Step 1: Read file into a list
-students = read_file(FILENAME)
+list_students = read_file(FILENAME)
 
 # Step 2: Manipulate the list
-add_student(students, "Budi")
-add_student(students, "Jane")
-add_student(students, "Javier")
+add_student(list_students, "Budi")
+add_student(list_students, "Jane")
+add_student(list_students, "Javier")
 
-display_students(students)
-search_student(students, "Jane")
+display_students(list_students)
+search_student(list_students, "Jane")
 
 # Step 3: Save the updated list to file
-write_file(FILENAME, students)
+write_file(FILENAME, list_students)
